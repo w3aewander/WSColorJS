@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+    Geração de cores HTML/Hexadecimal
+    @author Wanderlei Silva do Carmo <wander.silva@gmail.com>
+    @version 1.0
+    @license MIT
+-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geração de Cores</title>
+
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+
+    <script src="js/wscolor.js" defer></script>
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+     <h2>Criação de Cores</h2>
+     <h5>Por: Wanderlei Silva do Carmo <wander.silva@gmail.com></h5>
+     
+
+     <div class="container">
+
+         <div class="box-main">
+             <div class="box-left">
+                <h3 class="titlem,opt">Função de conversão:</h3>
+                <!-- <label class="radioopt"><input type="radio" name="conv-opt"> Decimal</label> -->
+                <label class="radioopt"><input type="radio" name="conv-opt" checked> Decimal/Hexadecimal</label>
+                <!-- <label class="radioopt"><input type="radio" name="conv-opt"> RGBA</label> -->
+
+                <form action="" 
+                    style="margin: 10px 5px 5px 0;
+                           padding: 0 5px 15px 0;
+                           border: 1px solid lightgray"
+                    
+                    >
+                    <div class="box-input-red">
+                        <input type="number" class="bx" id="txt-color-red" name="txtColorRed"  value="0" size="6"  minlength="3" max="255" min="0">
+                    </div>
+                    <div class="box-input-green">
+                        <input type="number" class="bx"  id="txt-color-green" name="txtColorGreen" value="0" size="6" minlength="3"  max="255" min="0">
+                    </div>
+                    <div class="box-input-blue">
+                        <input type="number"  class="bx"  id="txt-color-blue" name="txtColorBlue" value="0" size="6" minlength="3"  max="255" min="0">
+                    </div>
+                    <div class="box-buttons">
+                        <button class="btn btn-primary">
+                            Executar
+                        </button>
+                    </div>
+                </form>
+             </div>
+
+             <div class="box-center">
+                <div style="padding: 15px">
+                    Selecione uma cor:
+                    <div class="box-color">
+                        <input type="color" id="box-color">
+                    </div>
+                     <div style="padding: 10px 0 15px">Cor criada:</div>
+                    <div class="box-created-color"></div>
+                    <div id="cor-hexa" style="text-align: center;margin-top: 5px; padding: 5px;color: gray;border: 1px solid rgb(224, 214, 214); width: 120px">#000000</div>
+                </div>
+            </div>
+            
+             <div class="box-right"></div>
+             
+        </div>
+    </div>
+</body>
+</html>

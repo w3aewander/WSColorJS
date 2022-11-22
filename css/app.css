@@ -1,0 +1,131 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid rgb(3, 4, 44);
+    justify-content: center;
+    padding: 20px;
+    min-width: 618px;
+    max-width: 618px;
+    
+}
+
+radio:checked{
+    background-color: rgba(118, 101, 15, 0.954)
+}
+.box-right , .box-center, .box-left{
+
+    flex-grow: 1;
+    height: 100%;
+    padding: 10px;
+}
+.box-main{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 390px;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 10px #abcdef;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.radioopt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 95%;
+    border: 1px solid gray;
+    padding: 5px 0 5px;   
+}
+
+label .radioopt {
+    border: 1px solid rgb(65, 24, 169);
+    
+}
+
+.radioopt:hover{
+    cursor: pointer;
+    background-color: #e6e0a4;
+}
+
+h3.titleopt{
+    
+    padding: 5px 0 5px 5px;
+}
+
+
+.box-input-red input, .box-input-green input, .box-input-blue input{
+   font-size: 20px;
+   padding: 5px;
+   size: 6;
+}
+.box-input-red{
+    margin-top: 30px;
+}
+
+.box-input-red::before{
+    content: 'Vermelho:';
+    padding-left: 15px;
+    display: inline-block;
+    width: 110px;    
+}
+
+.box-input-green::before{
+    content: 'Verde:';
+    padding-left: 15px;
+    display: inline-block;
+    width: 110px;
+    
+}
+
+.box-input-blue::before{
+    content: 'Azul:';
+    padding-left: 15px;
+    display: inline-block;
+    width: 110px;
+}
+
+.box-buttons{
+    margin: 15px;
+}
+
+.box-buttons > button {
+    background-color: rgb(22, 180, 22);
+    font-size: 14px;
+    color: #fafafa;
+    padding: 5px;
+    width: 90px;
+}
+.box-buttons > button:hover{
+    background-color: rgba(74, 226, 74, 0.888);
+    color:rgb(3, 4, 44);
+    cursor: pointer;
+}
+
+.box-buttons > button:active{
+    border: inset;
+}
+
+.box-created-color{
+    width: 150px;
+    height: 150px;
+    border:  1px solid rgba(227, 217, 217, .5);
+    background-color: #faf3f7ea;
+}
+
+.bx{
+    border: 1px solid rgba(70, 66, 66, .2);
+    background-color: #fafafa;
+    color: rgba(61, 56, 56, 0.989);
+}
